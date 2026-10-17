@@ -1,4 +1,35 @@
 {
   "version": 1,
-  "entries": []
+  "entries": [
+    {
+      "slug": "why-the-two-project",
+      "title": "Why we built the T-W-O Project",
+      "date": "2026-10-17",
+      "type": "video",
+      "kind": "video",
+      "summary": "AI makes tasks faster, but experts still review in hours what it generates in seconds. This short talk explains why AI pilots stall and why the T-W-O Project starts with workflows and owners.",
+      "tags": [
+        "workflow redesign",
+        "ai agents",
+        "validation tax",
+        "ownership"
+      ],
+      "authors": [
+        "Wei Chen"
+      ],
+      "takeaways": [
+        "AI generates in seconds while experts still review in hours: the validation tax moves the work onto the reviewer.",
+        "Pilots speed up tasks but leave the workflow unchanged, so the real design question is what to decide up front, what to delegate, and where to review.",
+        "In the team's own spreadsheet benchmark, three human gates (scope, pilot, claims) lifted scores by 30 points with the same questions and the same grader. The reusable asset was the workflow, not the model.",
+        "Durable change works at three levels: task, workflow, and organization, with owners, shared standards and incentives."
+      ],
+      "thumbnail": "thumbnail.jpg",
+      "video": {
+        "platform": "youtube",
+        "id": "E_-4bHsLRwQ",
+        "format": "video",
+        "duration_s": 144
+      }
+    }
+  ]
 }
