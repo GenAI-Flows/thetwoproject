@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "slug": "why-workflow-ownership-matters-genai-era",
+      "title": "Why workflow ownership matters in the GenAI era",
+      "date": "2026-08-19",
+      "type": "article",
+      "kind": "article",
+      "summary": "AI changes what a task can produce, but ownership decides whether the redesigned workflow holds.",
+      "tags": [],
+      "authors": [
+        "The T-W-O Project"
+      ],
+      "takeaways": [],
+      "thumbnail": "/images/two-framework-editorial.svg"
+    }
+  ]
+}

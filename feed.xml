@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>The T-W-O Project Resources</title>
+    <link>https://thetwoproject.com/resources/</link>
+    <description>Videos, shorts and articles on AI workflow redesign.</description>
+    <item>
+      <title>Why workflow ownership matters in the GenAI era</title>
+      <link>https://thetwoproject.com/resources/why-workflow-ownership-matters-genai-era/</link>
+      <guid isPermaLink="true">https://thetwoproject.com/resources/why-workflow-ownership-matters-genai-era/</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <description>AI changes what a task can produce, but ownership decides whether the redesigned workflow holds.</description>
+    </item>
+  </channel>
+</rss>

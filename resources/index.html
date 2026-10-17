@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Videos, shorts and articles from The T-W-O Project on AI workflow redesign, ownership, and GenAI adoption.">
+  <link rel="canonical" href="https://thetwoproject.com/resources/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The T-W-O Project">
+  <meta property="og:title" content="Resources | The T-W-O Project">
+  <meta property="og:description" content="Videos, shorts and articles from The T-W-O Project on AI workflow redesign, ownership, and GenAI adoption.">
+  <meta property="og:url" content="https://thetwoproject.com/resources/">
+  <meta property="og:image" content="https://thetwoproject.com/images/LOGO-W-TEXT.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Resources | The T-W-O Project">
+  <meta name="twitter:image" content="https://thetwoproject.com/images/LOGO-W-TEXT.png">
+  <link rel="alternate" type="application/rss+xml" title="The T-W-O Project Resources" href="https://thetwoproject.com/feed.xml">
+  <title>Resources | The T-W-O Project</title>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@id": "https://thetwoproject.com/resources/#page", "@type": "CollectionPage", "name": "Resources | The T-W-O Project", "url": "https://thetwoproject.com/resources/"}, {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "name": "Why workflow ownership matters in the GenAI era", "position": 1, "url": "https://thetwoproject.com/resources/why-workflow-ownership-matters-genai-era/"}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://thetwoproject.com/", "name": "Home", "position": 1}, {"@type": "ListItem", "item": "https://thetwoproject.com/resources/", "name": "Resources", "position": 2}]}]}</script>
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-7a8gF1ZVN_QGPx2doBvLg.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XBXGC7R7V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9XBXGC7R7V');
+  </script>
+  <link rel="stylesheet" href="/styles.css?v=resources-20261016">
+  <style>
+    /* Resources components: kept here so styles.css stays untouched. Colors and fonts come from its :root tokens. */
+    .resource-filters { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin: 0 0 var(--space-5); }
+    .resource-filters button { font: 600 .85rem var(--font-sans); padding: .45rem .95rem; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--accent-deep); cursor: pointer; }
+    .resource-filters button[aria-pressed="true"] { background: var(--accent-deep); border-color: var(--accent-deep); color: #fff; }
+    .resource-filters .resource-filter-sep { align-self: center; color: var(--border); }
+    .resource-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: var(--space-5); }
+    .resource-grid [hidden] { display: none; }
+    .resource-card { display: flex; flex-direction: column; border: 1px solid var(--border-soft); border-radius: var(--radius); background: var(--surface); overflow: hidden; box-shadow: 0 .6rem 1.6rem rgba(31,31,26,.07); transition: transform var(--transition), box-shadow var(--transition); }
+    .resource-card:hover, .resource-card:focus-within { transform: translateY(-3px); box-shadow: 0 1rem 2.2rem rgba(31,31,26,.12); }
+    .resource-thumb { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; background: #1f1f1a; overflow: hidden; }
+    .resource-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .resource-card[data-kind="short"] .resource-thumb img { width: auto; height: 100%; aspect-ratio: 9 / 16; }
+    .resource-card[data-kind="article"] .resource-thumb { background: var(--surface-strong); }
+    .resource-card[data-kind="article"] .resource-thumb img { object-fit: contain; }
+    .resource-badge { position: absolute; left: .6rem; top: .6rem; padding: .15rem .55rem; border-radius: 999px; background: rgba(31,31,26,.82); color: #fff; font: 700 .7rem var(--font-sans); letter-spacing: .08em; text-transform: uppercase; }
+    .resource-card-body { display: grid; gap: .5rem; padding: var(--space-4); }
+    .resource-card-body h2 { margin: 0; font-size: 1.2rem; line-height: 1.25; }
+    .resource-card-body h2 a { color: inherit; text-decoration: none; }
+    .resource-card-body h2 a::after { content: ""; position: absolute; inset: 0; }
+    .resource-card { position: relative; }
+    .resource-card-body p { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.5; }
+    .resource-meta { color: var(--muted); font: .8rem var(--font-sans); }
+    .resource-breadcrumb { font: .85rem var(--font-sans); color: var(--muted); margin-bottom: var(--space-3); }
+    .resource-breadcrumb a { color: var(--accent-deep); }
+    .resource-summary { font-size: 1.2rem; line-height: 1.6; margin: 0 0 var(--space-4); }
+    .resource-player { position: relative; margin: 0 0 var(--space-4); background: #1f1f1a; border-radius: .8rem; overflow: hidden; aspect-ratio: 16 / 9; }
+    .resource-player-short { aspect-ratio: 9 / 16; max-width: 22rem; max-height: 80vh; margin-inline: auto; }
+    .resource-player button, .resource-player iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; padding: 0; }
+    .resource-player button { cursor: pointer; background: #1f1f1a center / cover no-repeat; }
+    .resource-player button span { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 4.5rem; height: 4.5rem; border-radius: 50%; background: rgba(255,255,255,.92); display: grid; place-items: center; font-size: 1.8rem; color: var(--accent-deep); }
+    .resource-takeaways { margin: 0 0 var(--space-5); padding: var(--space-4); border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; }
+    .resource-takeaways h2 { margin: 0 0 var(--space-2); font-size: 1.05rem; font-family: var(--font-sans); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-deep); }
+    .resource-takeaways li { margin: 0 0 .4rem; line-height: 1.55; }
+    .resource-article-body h2, .resource-article-body h3 { margin: var(--space-5) 0 var(--space-2); }
+    .resource-article-body p, .resource-article-body li { font-size: clamp(1.08rem, 1.6vw, 1.23rem); line-height: 1.8; }
+    .resource-transcript { margin: var(--space-5) 0; border: 1px solid var(--border-soft); border-radius: var(--radius); padding: var(--space-3) var(--space-4); background: var(--surface); }
+    .resource-transcript summary { cursor: pointer; font: 700 .95rem var(--font-sans); color: var(--accent-deep); }
+    .resource-transcript p { margin: .6rem 0; line-height: 1.6; }
+    .resource-transcript .ts { font: .8rem var(--font-mono, monospace); color: var(--muted); margin-right: .5rem; }
+    .resource-cta { display: flex; flex-wrap: wrap; gap: var(--space-3); margin: var(--space-5) 0; }
+    .resource-related { margin-top: var(--space-6); }
+    .resource-related h2 { font-size: 1.3rem; }
+  </style>
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-shell">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="site-brand" href="/index.html"><img src="/images/logo-header.png" alt="The T-W-O Project logo" width="228" height="96">The T-W-O Project</a>
+        <div class="site-nav-links">
+          <a href="/framework.html">Framework</a>
+          <a href="/owner.html">The Owner</a>
+          <a href="/work-with-us.html">Services</a>
+          <a aria-current="page" href="/resources/">Resources</a>
+          <a href="/about.html">About</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="section blog-index-section" aria-label="Resources">
+      <div class="site-shell">
+        <div class="blog-index-header">
+          <p class="section-label">Resources</p>
+          <h1>Ideas on redesigning work.</h1>
+        </div>
+
+        <div class="resource-filters" role="group" aria-label="Filter resources">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="video" aria-pressed="false">Videos</button>
+          <button type="button" data-filter="short" aria-pressed="false">Shorts</button>
+          <button type="button" data-filter="article" aria-pressed="false">Articles</button>
+
+        </div>
+
+        <div class="resource-grid" id="resource-grid">
+              <article class="resource-card" data-kind="article" data-tags="">
+                <div class="resource-thumb">
+                  <img src="/images/two-framework-editorial.svg" alt="" loading="lazy">
+                  <span class="resource-badge">Article</span>
+                </div>
+                <div class="resource-card-body">
+                  <p class="resource-meta"><time datetime="2026-08-19">August 19, 2026</time></p>
+                  <h2><a href="/resources/why-workflow-ownership-matters-genai-era/">Why workflow ownership matters in the GenAI era</a></h2>
+                  <p>AI changes what a task can produce, but ownership decides whether the redesigned workflow holds.</p>
+                </div>
+              </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-bordered section-quiet" aria-labelledby="linkedin-posts-heading">
+      <div class="site-shell">
+        <div class="section-intro">
+          <p class="section-label">LinkedIn posts</p>
+          <h2 id="linkedin-posts-heading">Public posts from the project.</h2>
+        </div>
+        <div class="linkedin-real-preview-grid">
+          <article class="linkedin-real-preview-card">
+            <div class="linkedin-real-preview-window" aria-label="Preview of LinkedIn post about The Owner">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7447281827767259136" height="1115" width="504" frameborder="0" scrolling="no" allowfullscreen="" title="Embedded LinkedIn post"></iframe>
+            </div>
+            <a class="linkedin-real-preview-link" href="https://www.linkedin.com/feed/update/urn:li:share:7447281827767259136/" target="_blank" rel="noopener noreferrer">Open full post on LinkedIn</a>
+          </article>
+          <article class="linkedin-real-preview-card">
+            <div class="linkedin-real-preview-window" aria-label="Preview of Zinnia podcast LinkedIn post featuring Dr. Wei Chen">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7466103559370215424" height="1014" width="504" frameborder="0" scrolling="no" allowfullscreen="" title="Embedded LinkedIn post"></iframe>
+            </div>
+            <a class="linkedin-real-preview-link" href="https://www.linkedin.com/posts/zinniatm_wei-chen-who-owns-the-workflow-the-organizational-activity-7466103559370215424-u2by" target="_blank" rel="noopener noreferrer">Open full post on LinkedIn</a>
+          </article>
+          <article class="linkedin-real-preview-card linkedin-real-preview-card-empty" aria-hidden="true">
+            <div class="linkedin-real-preview-window linkedin-real-preview-window-empty"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workshop-cta-section" aria-labelledby="blog-cta-heading">
+      <div class="site-shell owner-feedback-layout">
+        <div>
+          <p class="section-label">Apply the ideas</p>
+          <h2 id="blog-cta-heading">Turn the thinking into a workflow redesign.</h2>
+          <p>The fastest next step is to choose one real workflow and decide what should change around AI.</p>
+        </div>
+        <div class="owner-feedback-cta">
+          <a class="button-link button-link-light" href="/work-with-us.html">Explore services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-shell footer-row footer-row-refined">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/framework.html">Framework</a>
+        <a href="/research.html">Research</a>
+        <a href="/clients.html">Clients &amp; Engagements</a>
+        <a href="/resources/">Resources</a>
+        <a href="/owner.html">Books</a>
+        <a href="https://bookings.cloud.microsoft/book/AIWorkflowGameDiscoveryCall@genai4all.org/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer">Book a Meeting</a>
+        <a href="mailto:info@thetwoproject.com">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var cards = Array.prototype.slice.call(document.querySelectorAll('#resource-grid .resource-card'));
+      var buttons = Array.prototype.slice.call(document.querySelectorAll('.resource-filters button'));
+      var kind = 'all', tag = null;
+      function apply() {
+        cards.forEach(function (c) {
+          var okKind = kind === 'all' || c.dataset.kind === kind;
+          var okTag = !tag || (c.dataset.tags || '').split('|').indexOf(tag) !== -1;
+          c.hidden = !(okKind && okTag);
+        });
+        buttons.forEach(function (b) {
+          var on = b.dataset.filter ? (!tag && b.dataset.filter === kind) : b.dataset.tag === tag;
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+      }
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () {
+          if (b.dataset.filter) { kind = b.dataset.filter; tag = null; }
+          else { tag = tag === b.dataset.tag ? null : b.dataset.tag; kind = 'all'; }
+          apply();
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

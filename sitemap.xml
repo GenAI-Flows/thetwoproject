@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thetwoproject.com/</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://thetwoproject.com/owner.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://thetwoproject.com/work-with-us.html</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://thetwoproject.com/clients.html</loc>
-    <lastmod>2026-08-19</lastmod>
-  </url>
-  <url>
-    <loc>https://thetwoproject.com/blog.html</loc>
-    <lastmod>2026-08-21</lastmod>
-  </url>
-  <url>
-    <loc>https://thetwoproject.com/why-workflow-ownership-matters-genai-era.html</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://thetwoproject.com/research.html</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://thetwoproject.com/about.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-10-11</lastmod>
+  </url>
+  <url>
+    <loc>https://thetwoproject.com/framework.html</loc>
+    <lastmod>2026-10-11</lastmod>
+  </url>
+  <url>
+    <loc>https://thetwoproject.com/resources/</loc>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://thetwoproject.com/resources/why-workflow-ownership-matters-genai-era/</loc>
+    <lastmod>2026-08-19</lastmod>
   </url>
 </urlset>
