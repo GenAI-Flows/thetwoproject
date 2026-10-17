@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Videos, shorts and articles from The T-W-O Project on AI workflow redesign, ownership, and GenAI adoption.">
+  <meta name="description" content="Videos, articles and posts from The T-W-O Project on AI workflow redesign, ownership, and GenAI adoption.">
   <link rel="canonical" href="https://thetwoproject.com/resources/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="The T-W-O Project">
   <meta property="og:title" content="Resources | The T-W-O Project">
-  <meta property="og:description" content="Videos, shorts and articles from The T-W-O Project on AI workflow redesign, ownership, and GenAI adoption.">
+  <meta property="og:description" content="Videos, articles and posts from The T-W-O Project on AI workflow redesign, ownership, and GenAI adoption.">
   <meta property="og:url" content="https://thetwoproject.com/resources/">
   <meta property="og:image" content="https://thetwoproject.com/images/LOGO-W-TEXT.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -16,7 +16,7 @@
   <meta name="twitter:image" content="https://thetwoproject.com/images/LOGO-W-TEXT.png">
   <link rel="alternate" type="application/rss+xml" title="The T-W-O Project Resources" href="https://thetwoproject.com/feed.xml">
   <title>Resources | The T-W-O Project</title>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@id": "https://thetwoproject.com/resources/#page", "@type": "CollectionPage", "name": "Resources | The T-W-O Project", "url": "https://thetwoproject.com/resources/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://thetwoproject.com/", "name": "Home", "position": 1}, {"@type": "ListItem", "item": "https://thetwoproject.com/resources/", "name": "Resources", "position": 2}]}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@id": "https://thetwoproject.com/resources/#page", "@type": "CollectionPage", "name": "Resources | The T-W-O Project", "url": "https://thetwoproject.com/resources/"}, {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "name": "Why we built the T-W-O Project", "position": 1, "url": "https://thetwoproject.com/resources/why-the-two-project/"}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://thetwoproject.com/", "name": "Home", "position": 1}, {"@type": "ListItem", "item": "https://thetwoproject.com/resources/", "name": "Resources", "position": 2}]}]}</script>
   <!-- Privacy-friendly analytics by Plausible -->
   <script async src="https://plausible.io/js/pa-7a8gF1ZVN_QGPx2doBvLg.js"></script>
   <script>
@@ -107,18 +107,34 @@
         <div class="resource-filters" role="group" aria-label="Filter resources">
           <button type="button" data-filter="all" aria-pressed="true">All</button>
           <button type="button" data-filter="video" aria-pressed="false">Videos</button>
-          <button type="button" data-filter="short" aria-pressed="false">Shorts</button>
+          <button type="button" data-scroll="linkedin-posts" aria-pressed="false">Posts</button>
           <button type="button" data-filter="article" aria-pressed="false">Articles</button>
+          <span class="resource-filter-sep" aria-hidden="true">|</span>
+          <button type="button" data-tag="ai agents" aria-pressed="false">ai agents</button>
+          <button type="button" data-tag="ownership" aria-pressed="false">ownership</button>
+          <button type="button" data-tag="validation tax" aria-pressed="false">validation tax</button>
+          <button type="button" data-tag="workflow redesign" aria-pressed="false">workflow redesign</button>
 
         </div>
 
         <div class="resource-grid" id="resource-grid">
+              <article class="resource-card" data-kind="video" data-tags="workflow redesign|ai agents|validation tax|ownership">
+                <div class="resource-thumb">
+                  <img src="/resources/why-the-two-project/thumbnail.jpg" alt="" loading="lazy">
+                  <span class="resource-badge">Video</span>
+                </div>
+                <div class="resource-card-body">
+                  <p class="resource-meta"><time datetime="2026-10-17">October 17, 2026</time> · 2:24</p>
+                  <h2><a href="/resources/why-the-two-project/">Why we built the T-W-O Project</a></h2>
+                  <p>AI makes tasks faster, but experts still review in hours what it generates in seconds. This short talk explains why AI pilots stall and why the T-W-O Project starts with workflows and owners.</p>
+                </div>
+              </article>
 
         </div>
       </div>
     </section>
 
-    <section class="section section-bordered section-quiet" aria-labelledby="linkedin-posts-heading">
+    <section class="section section-bordered section-quiet" id="linkedin-posts" aria-labelledby="linkedin-posts-heading">
       <div class="site-shell">
         <div class="section-intro">
           <p class="section-label">LinkedIn posts</p>
@@ -187,6 +203,11 @@
       }
       buttons.forEach(function (b) {
         b.addEventListener('click', function () {
+          if (b.dataset.scroll) {
+            var target = document.getElementById(b.dataset.scroll);
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            return;
+          }
           if (b.dataset.filter) { kind = b.dataset.filter; tag = null; }
           else { tag = tag === b.dataset.tag ? null : b.dataset.tag; kind = 'all'; }
           apply();

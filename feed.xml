@@ -3,6 +3,13 @@
   <channel>
     <title>The T-W-O Project Resources</title>
     <link>https://thetwoproject.com/resources/</link>
-    <description>Videos, shorts and articles on AI workflow redesign.</description>
+    <description>Videos, articles and posts on AI workflow redesign.</description>
+    <item>
+      <title>Why we built the T-W-O Project</title>
+      <link>https://thetwoproject.com/resources/why-the-two-project/</link>
+      <guid isPermaLink="true">https://thetwoproject.com/resources/why-the-two-project/</guid>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
+      <description>AI makes tasks faster, but experts still review in hours what it generates in seconds. This short talk explains why AI pilots stall and why the T-W-O Project starts with workflows and owners.</description>
+    </item>
   </channel>
 </rss>
