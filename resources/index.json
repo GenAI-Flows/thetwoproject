@@ -2,6 +2,36 @@
   "version": 1,
   "entries": [
     {
+      "slug": "explore-experiment-automate-bootcamp",
+      "title": "Explore, Experiment, Automate: A T-W-O Project Bootcamp",
+      "date": "2026-10-29",
+      "type": "video",
+      "kind": "video",
+      "summary": "See how a real business problem becomes an AI workflow through exploration, step-by-step testing, and automation with human review. This short explainer follows a daily portfolio-brief example.",
+      "tags": [
+        "AI bootcamp",
+        "workflow redesign",
+        "AI automation",
+        "human oversight"
+      ],
+      "authors": [
+        "Wei Chen"
+      ],
+      "takeaways": [
+        "Start with a real problem and explore where AI helps—and where it fails.",
+        "Break the workflow into steps, check each answer, and fix weak steps before connecting them.",
+        "Chain tested skills into an automation with a trigger, a useful output, and a human review checkpoint.",
+        "Use the example to identify which of your team's own workflows is worth testing next."
+      ],
+      "thumbnail": null,
+      "video": {
+        "platform": "youtube",
+        "id": "fRnluOVVfGo",
+        "format": "video",
+        "duration_s": 104
+      }
+    },
+    {
       "slug": "why-the-two-project",
       "title": "Why we built the T-W-O Project",
       "date": "2026-10-17",
